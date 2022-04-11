@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/mdb.min.css">
+    <title>CRM</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center" style="height: 40px;">
+      
+        <div class="container">
+     
+            
+        </div>
+    </nav>  
+    <div class="container-fluid" style="margin-top: 60px;">
+        <div class="text-center">
+
+        </div>
+        <div class="row">
+            <div class="col col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-outline mb-4">
+                            <input type="text" id="user_name" class="form-control" />
+                            <label class="form-label" for="user_name">* Nom</label>
+                          </div>
+                          <div class="form-outline mb-4">
+                            <input type="text" id="user_lastname" class="form-control" />
+                            <label class="form-label" for="user_lastname">* Prénom</label>
+                          </div>
+                          <div class="form-outline mb-4">
+                            <input type="date" id="user_datebirth" class="form-control" />
+                            <label class="form-label" for="user_datebirth">* Date De Naissance</label>
+                          </div>
+                          <div class="form-outline mb-4">
+                            <input type="number" id="user_phonenumber" class="form-control" />
+                            <label class="form-label" for="user_phonenumber">* Numéro de téléphone</label>
+                          </div>
+                          <div class="form-outline mb-4">
+                            <input type="text" id="user_adress" class="form-control" />
+                            <label class="form-label" for="user_adress">Adress</label>
+                          </div>
+                          <div class="text-center">
+                            <button type="button" class="btn btn-primary btn-rounded" id="add_user_btn">
+                                Ajouter
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6">
+                <ul class="nav nav-pills nav-justified mb-3" >
+                    <li class="nav-item" >
+                        <div class="form-outline" style="width: 90px;">
+                            <input type="number" id="limit_pagination" class="form-control" value="20"/>
+                            <label class="form-label" for="limit_pagination" >Pagination</label>
+                          </div>
+                    </li>
+                    <li class="nav-item" >
+                        <div class="form-outline" >
+                            <input type="text" id="search_input" class="form-control" />
+                            <label class="form-label" for="limit_pagination" >Search</label>
+                          </div>
+                    </li>
+                    <li class="nav-item" >
+                        <button type="button" class="btn btn-danger btn-rounded" id="delete_users_selected">
+                            Delete Cheked Users
+                        </button>
+                    </li>
+                </ul>
+                <div class="table-responsive" style="height: 700px;width: 800px;">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prénom</th>
+                            <th scope="col">Date De Naissance</th>
+                            <th scope="col">N° Telephone</th>
+                            <th scope="col">Adress</th>
+                            <th scope="col"> </th>
+                            <th scope="col"> </th>
+                            <th scope="col"> </th>
+                          </tr>
+                        </thead>
+                        <tbody id="users_here">
+                      
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="asset/js/jquery.js"></script>
+<script src="asset/js/mdb.min.js"></script>
+</html>
